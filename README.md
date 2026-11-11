@@ -16,7 +16,15 @@ npm install
 npm run dev      # start the dev server
 npm test         # unit tests (calculation logic, no rendering)
 npm run build    # typecheck + production build
+npm run build:pages  # build into docs/ for GitHub Pages
 ```
+
+## GitHub Pages
+
+The `docs/` folder holds a committed production build with relative asset paths, so it works under any
+subpath (e.g. `https://<user>.github.io/NettoPL_B/`). After changing the code, run `npm run build:pages`
+and commit `docs/`. In the repository settings: **Settings → Pages → Source: Deploy from a branch →
+Branch: `main`, folder: `/docs`**.
 
 ## Structure
 
